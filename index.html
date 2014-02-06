@@ -9,9 +9,17 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <link rel="stylesheet" type="text/css" href="stylesheets/dbpas.aligntocircle.css" media="all" />
     <style>
-      [data-align-to-circle] {
-        width: 200px;
-        height: 200px;
+      section#main-content {
+        height: 600px;
+      }
+      div#group-1 {
+        left: 100px;
+      }
+      ul#group-2 {
+        left: 200px;
+      }
+      div#group-3 {
+        left: 300px;
       }
     </style>
     <!--[if lt IE 9]>
@@ -28,7 +36,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="javascripts/dbpas.aligntocircle.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function(e) {
+      document.addEventListener('DOMContentLoaded', function(e) {
         var groupOne = new dbpasAlignToCircle('#group-1', {
                              'radius': '100px',
                              'skip': '.ignore'
@@ -100,6 +108,7 @@
                <p>Item 3</p>
              </div>
            </div>
+           <br class='clearfix'>
         </section>
 
         <footer>
