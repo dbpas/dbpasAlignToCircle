@@ -1,4 +1,4 @@
-var alignToCircle = function(selector, options) { 'use strict';
+var dbpasAlignToCircle = function(selector, options) { 'use strict';
   //TODO: add multiple element selector, add destroy method, add reverse animation method
   
   var self = this,
