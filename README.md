@@ -6,6 +6,8 @@ Align group of elements into a circle.
 ###Overview
 Take a group of elements and align them in a circle.
 
+[Demo](http://dbpas.github.io/dbpasAlignToCircle/)
+
 ###Install
 ####Simple
 ```html
