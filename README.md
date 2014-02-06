@@ -14,7 +14,25 @@ Take a group of elements and align them in a circle.
   <link rel="stylesheet" href="dbpas.aligntocircle.css">
   <script src="dbpas.aligntocircle.js"></script>
   <script>
-    var itemsInACircle = new alignToCircle('selector', {options});
+    var itemsInACircle = new alignToCircle('#group', {
+                               'radius': '200px',
+                               'skip': '.ignore'
+                             });
+  </script>
+  ...
+</head>
+```
+####With CSS Animation
+```html
+<head>
+  ...
+  <link rel="stylesheet" href="dbpas.aligntocircle.css">
+  <script src="dbpas.aligntocircle.js"></script>
+  <script>
+    var itemsInACircle = new alignToCircle('#group', {
+                               'animation': true,
+                               'skip': '.ignore'
+                             });
   </script>
   ...
 </head>
@@ -27,7 +45,11 @@ Take a group of elements and align them in a circle.
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script src="dbpas.aligntocircle.js"></script>
   <script>
-    var itemsInACircle = new alignToCircle('selector', {'enableGSAP': true});
+    var itemsInACircle = new alignToCircle('#group', {
+                               'animation': true, 
+                               'enableGSAP': true,
+                               'skip': '.ignore'
+                             });
   </script>
   ...
 </head>
@@ -44,3 +66,19 @@ Take a group of elements and align them in a circle.
 |`skip`         |Direct children in group to exclude from circle.   |`string`  |null    |
 |`start`        |Shift start from 0.                                |`int`     |-90     |
 |`type`         |Circle type; 1 whole, 0.5 half, 0.25 quarter.      |`int`     |1       |
+
+###Usage
+Group your elements inside any block element.
+```html
+<body>
+  ...
+  <div id="group">
+    <p class="ignore">Center</p>
+    <p>Item 2</p>
+    <p>Item 3</p>
+    <p>Item 4</p>
+    <p>Item 5</p>
+  </div>
+  ...
+</body>
+```
