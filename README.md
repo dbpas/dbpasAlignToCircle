@@ -27,7 +27,7 @@ Take a group of elements and align them in a circle.
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script src="dbpas.aligntocircle.js"></script>
   <script>
-    var itemsInACircle = new alignToCircle('selector', {options});
+    var itemsInACircle = new alignToCircle('selector', {'enableGSAP': true});
   </script>
   ...
 </head>
