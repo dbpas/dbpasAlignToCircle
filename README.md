@@ -1,4 +1,4 @@
 dbpasAlignToCircle
 ==================
 
-Align groups of elements into a circle
+Align group of elements into a circle.
