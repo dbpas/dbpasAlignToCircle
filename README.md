@@ -14,10 +14,14 @@ Take a group of elements and align them in a circle.
   <link rel="stylesheet" href="dbpas.aligntocircle.css">
   <script src="dbpas.aligntocircle.js"></script>
   <script>
-    var itemsInACircle = new dbpasAlignToCircle('#group', {
-                               'radius': '200px',
-                               'skip': '.ignore'
-                             });
+    document.addEventListener('DOMContentLoaded', function(e) {
+      var itemsInACircle = new dbpasAlignToCircle('#group', {
+                                 'radius': '200px',
+                                 'skip': '.ignore'
+                               });
+      
+      itemsInACircle.init();
+    }, false);
   </script>
   ...
 </head>
@@ -29,10 +33,14 @@ Take a group of elements and align them in a circle.
   <link rel="stylesheet" href="dbpas.aligntocircle.css">
   <script src="dbpas.aligntocircle.js"></script>
   <script>
-    var itemsInACircle = new dbpasAlignToCircle('#group', {
-                               'animation': true,
-                               'skip': '.ignore'
-                             });
+    document.addEventListener('DOMContentLoaded', function(e) {
+      var itemsInACircle = new dbpasAlignToCircle('#group', {
+                                 'animation': true,
+                                 'skip': '.ignore'
+                               });
+      
+      itemsInACircle.init();
+    }, false);
   </script>
   ...
 </head>
@@ -45,11 +53,15 @@ Take a group of elements and align them in a circle.
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script src="dbpas.aligntocircle.js"></script>
   <script>
-    var itemsInACircle = new dbpasAlignToCircle('#group', {
-                               'animation': true, 
-                               'enableGSAP': true,
-                               'skip': '.ignore'
-                             });
+    document.addEventListener('DOMContentLoaded', function(e) {
+      var itemsInACircle = new dbpasAlignToCircle('#group', {
+                                 'animation': true, 
+                                 'enableGSAP': true,
+                                 'skip': '.ignore'
+                               });
+      
+      itemsInACircle.init();
+    }, false);
   </script>
   ...
 </head>
