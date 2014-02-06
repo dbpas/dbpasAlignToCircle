@@ -1,0 +1,14 @@
+[data-align-to-circle] {
+  position: relative;
+}
+[data-align-to-circle] > * {
+  position: absolute;
+  opacity: 0;
+}
+[data-align-to-circle] > .animate {
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+[data-align-to-circle] > .ignore {
+  opacity: 1;
+}
