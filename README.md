@@ -40,7 +40,7 @@ Take a group of elements and align them in a circle.
 |`animation`    |Enable animation during alignment.                 |`boolean` |false   |
 |`enableGSAP`   |Use greensock animation platform vs css animation. |`boolean` |false   |
 |`radius`       |Distance from center, CSS units.                   |`string`  |12em    |
-|`reverseOrder` |Reverse order of items.                            |`boolean` |false   |
+|`reverseOrder` |Reverse order of elements in group.                |`boolean` |false   |
 |`skip`         |Direct children in group to exclude from circle.   |`string`  |null    |
 |`start`        |Shift start from 0.                                |`int`     |-90     |
 |`type`         |Circle type; 1 whole, 0.5 half, 0.25 quarter.      |`int`     |1       |
