@@ -52,10 +52,19 @@
                              'radius': '100px',
                              'type': 0.5
                            });
+        
+        var groupFour = new dbpasAlignToCircle('#group-4', {
+                             'animation': true,
+                             'enableGSAP': true,
+                             'radius': '100px',
+                             'start': 0,
+                             'type': 0.75
+                           });
                            
         groupOne.init();
         groupTwo.init();
         groupThree.init();
+        groupFour.init();
       }, false);
     </script>
     <title>dbpas :: dbpasAlignToCircle</title>
@@ -95,7 +104,7 @@
              <li>Item 4</li>
              <li>Item 5</li>
            </ul>
-           <div id="group-3">
+           <div id="group-4">
              <div>
                <p>Item 1</p>
              </div>
@@ -104,6 +113,18 @@
              </div>
              <div>
                <p>Item 3</p>
+             </div>
+             <div>
+               <p>Item 4</p>
+             </div>
+             <div>
+               <p>Item 5</p>
+             </div>
+             <div>
+               <p>Item 6</p>
+             </div>
+             <div>
+               <p>Item 7</p>
              </div>
            </div>
            <br class='clearfix'>
