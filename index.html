@@ -19,10 +19,17 @@
       ga('create', 'UA-19637996-7', 'dbpas.github.io');
       ga('send', 'pageview');
     </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="javascripts/dbpas.aligntocircle.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function(e) {
         var groupOne = new dbpasAlignToCircle('#group-1', {
+                             'radius': '200px',
+                             'skip': '.ignore'
+                           });
+        
+        var groupTwo = new dbpasAlignToCircle('#group-2', {
+                             'animation': true,
                              'radius': '200px',
                              'skip': '.ignore'
                            });
