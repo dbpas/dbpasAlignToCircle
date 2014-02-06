@@ -21,6 +21,24 @@
     </script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="javascripts/dbpas.aligntocircle.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e) {
+        var groupOne = new dbpasAlignToCircle('#group-1', {
+                             'radius': '200px',
+                             'skip': '.ignore'
+                           });
+        
+        var groupTwo = new dbpasAlignToCircle('#group-2', {
+                             'animation': true,
+                             'radius': '200px',
+                             'skip': '.ignore'
+                           });
+                           console.log('test');
+                           
+        groupOne.init();
+        groupTwo.init();
+      }, false);
+    </script>
     <title>dbpas :: dbpasAlignToCircle</title>
   </head>
 
@@ -81,20 +99,5 @@
         
       </div>
     </div>
-    <script>
-      
-        var groupOne = new dbpasAlignToCircle('#group-1', {
-                             'radius': '200px',
-                             'skip': '.ignore'
-                           });
-        
-        var groupTwo = new dbpasAlignToCircle('#group-2', {
-                             'animation': true,
-                             'radius': '200px',
-                             'skip': '.ignore'
-                           });
-                           console.log('test');
-     
-    </script>
   </body>
 </html>
