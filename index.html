@@ -31,12 +31,19 @@
         var groupTwo = new dbpasAlignToCircle('#group-2', {
                              'animation': true,
                              'radius': '200px',
-                             'skip': '.ignore'
+                             'reverseOrder': true
                            });
-                           console.log('test');
+                           
+        var groupTwo = new dbpasAlignToCircle('#group-2', {
+                             'animation': true,
+                             'enableGSAP': true,
+                             'radius': '200px',
+                             'type': 0.5
+                           });
                            
         groupOne.init();
         groupTwo.init();
+        groupThree.init();
       }, false);
     </script>
     <title>dbpas :: dbpasAlignToCircle</title>
