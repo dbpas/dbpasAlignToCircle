@@ -75,7 +75,10 @@ var alignToCircle = function(selector, options) { 'use strict';
     items.forEach(function(item, index) {
       var rotate = slice * index + self.options.start,
           rotateReverse = rotate * -1,
-          css = {'opacity': 1, 'transform': 'rotate(' + rotate + 'deg) translate(' + self.options.radius + ') rotate(' + rotateReverse + 'deg)'},
+          css = {
+            'opacity': 1, 
+            'transform': 'rotate(' + rotate + 'deg) translate(' + self.options.radius + ') rotate(' + rotateReverse + 'deg)'
+          },
           delayTimer;
           
       if (self.options.animation && self.options.enableGSAP && timeLine) {
