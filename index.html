@@ -20,6 +20,14 @@
       ga('send', 'pageview');
     </script>
     <script src="javascripts/dbpas.aligntocircle.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e) {
+        var groupOne = new dbpasAlignToCircle('#group-1', {
+                             'radius': '200px',
+                             'skip': '.ignore'
+                           });
+      });
+    </script>
     <title>dbpas :: dbpasAlignToCircle</title>
   </head>
 
