@@ -96,3 +96,6 @@ Group your elements inside any block element.
   ...
 </body>
 ```
+
+##Tips
+- If the formatting looks bad, be sure to setup `css` default overrides. Look to this `[data-align-to-circle]` selector to fix most of your issues.
